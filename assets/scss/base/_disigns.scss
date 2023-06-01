@@ -1,0 +1,75 @@
+@use "../mixins/mixins" as mixins;
+
+
+.designing--area{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: -2;
+
+    &--ellipse{
+        width: 602px;
+        height: 602px;
+        left: 0px;
+        border-radius: 50%;
+        opacity: 0.2;
+        border: 71px solid #888B98;
+
+        @include mixins.responsive(xs) {
+            margin-top: 15px;
+          width: 200px;
+          height: 200px;
+            }
+        @include mixins.responsive(sm) {
+                margin-top: 15px;
+                width: 452px;
+                height: 452px;
+                }
+                @include mixins.responsive(md) {
+                    margin-top: 15px;
+                    width: 502px;
+                    height: 502px;
+                    
+                    }
+                    @include mixins.responsive(lg) {
+                        margin-top: 15px;
+                        width: 602px;
+                        height: 602px;
+                        width: 40%;
+                        }
+                @include mixins.responsive(xlg) {
+                   
+                    margin-top: 15px;
+                    width: 602px;
+                    height: 602px;
+                    margin-left: 100px;
+                    width: 30%;
+                    }
+                    @include mixins.responsive(xxlg) {
+                        margin-top: 15px;
+                        width: 1200px;
+                        height: 1200px;
+                        width: 40%;
+                        }
+    }
+    &--circle{
+        width: 236px;
+        height: 236px;
+        background: #52BEEC;
+        opacity: 0.7;
+        filter: blur(200px);
+
+        @include mixins.responsive(xs) {
+            display: none;
+            }
+            @include mixins.responsive(xlg) {
+                width: 236px;
+                height: 236px;
+                }
+                @include mixins.responsive(xxlg) {
+                    width: 436px;
+                    height: 436px;
+                    }
+    }
+    
+}

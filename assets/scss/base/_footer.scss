@@ -1,0 +1,310 @@
+@use "../mixins/mixins" as mixins;
+
+.footerbg{
+    position: absolute;
+    background-color: #888B98 ;
+    width: 100%;
+    height: 300px;
+    opacity: 0.2;
+    @include mixins.responsive(xs) {
+        width: 100%;
+        height: 500px;
+    }
+    @include mixins.responsive(sm) {
+       
+    }
+    @include mixins.responsive(md) {
+        width: 100%;
+        height: 320px;
+    }
+    @include mixins.responsive(lg) {
+      
+    }
+    @include mixins.responsive(xlg) {
+       
+    }
+    @include mixins.responsive(xxlg) {
+       
+    }
+}
+
+
+.footer{
+    position: absolute;
+    top: 2150px;
+    width: 100%;
+    height: 300px;
+    @include mixins.responsive(xs) {
+        display: flex;
+        top: 1900px;
+    width: 100%;
+    height: auto;
+    }
+    @include mixins.responsive(md) {
+        top: 1800px;
+    }
+    @include mixins.responsive(lg) {
+        top: 1900px;
+    }
+    @include mixins.responsive(xlg) {
+        top: 2200px;
+    }
+    @include mixins.responsive(xxlg) {
+        top: 3500px;
+    }
+
+.footersection{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 50px;
+
+    @include mixins.responsive(xs) {
+        flex: none !important;
+        width: 100%;
+        height: auto;
+    }
+    
+   
+    
+
+    .contants{
+        
+    
+        h3{
+            position: absolute;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #393E54;
+            left: 100px;
+            @include mixins.responsive(xs) {
+                left: 10px;
+            }
+            @include mixins.responsive(md) {
+                left: 10px;
+            }
+            @include mixins.responsive(lg) {
+                left: 50px;
+            }
+            @include mixins.responsive(xlg) {
+                left: 50px;
+            }
+            @include mixins.responsive(xxlg) {
+                left: 200px;
+                font-weight: 600;
+            font-size: 30px;
+            line-height: 46px;
+            }
+           
+        }
+        p{
+            position: absolute;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            left: 100px;
+            top: 50px;
+            color: #393E54;
+            @include mixins.responsive(xs) {
+                left: 10px;
+            }
+            @include mixins.responsive(md) {
+                left: 10px;
+            }
+            @include mixins.responsive(xlg) {
+                left: 50px;
+            }
+            @include mixins.responsive(xxlg) {
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 48px;
+                left: 200px;
+            }
+
+        }
+    }
+    .logo img{
+        position: absolute;
+        top: 50px;
+        width: 203px;
+        height: 61px;
+        @include mixins.responsive(xs) {
+            top: 350px;
+            left: 60px;
+        }
+        @include mixins.responsive(md) {
+            top: 30px;
+            
+        }
+        @include mixins.responsive(xxlg) {
+            top: 80px;
+            margin-left: 100px;
+            width: 203px;
+            height: 61px;
+        }
+    }
+}
+
+.socialmedia {
+    @include mixins.responsive(xs) {
+        position: absolute;
+        top: 150px;
+        left: 10px;
+    }
+    @include mixins.responsive(md) {
+       padding-right: 10px;
+    }
+    @include mixins.responsive(md) {
+        padding-right: 50px;
+     }
+   h3{
+    @include mixins.responsive(xxlg) {
+        
+        font-weight: 600;
+    font-size: 24px;
+    line-height: 46px;
+    }
+   
+   }
+    img{
+        width: 50px;
+        height: 50px;
+        padding-right: 5px;
+      }
+      @include mixins.responsive(xxlg) {
+        width: 100px;
+        height: 100px;
+        padding-right: 5px;
+        margin-right: 250px;
+    }
+    &--icons{
+        display: flex;
+        justify-content: space-between;
+     
+    }
+}
+.footerline{
+    position: absolute;
+    width: 80%;
+    height: 0px;
+    left: 100px;
+    top: 248px;
+    border: 1px solid #393E54;
+    @include mixins.responsive(xs) {
+        width: 80%;
+        height: 0px;
+        left: 30px;
+        top: 350px;
+    }
+    @include mixins.responsive(xxlg) {
+        top: 258px;
+        left: 300px;
+    }
+}
+.seira{
+        
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+justify-content: center;
+color: #393E54;
+opacity: 0.6;
+display: flex;
+position: relative;
+top: 280px;
+        @include mixins.responsive(xs) {
+            top: 300px;
+            left: 50px;
+        }
+        @include mixins.responsive(xxlg) {
+            top: 288px;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 200px;
+        }
+}
+}
+
+
+/*
+.footer{
+    position: absolute;
+    width:100%;
+    height: 340px;
+    left: 0px;
+    top: 2200px;
+    background: #888B98;
+    opacity: 0.2;
+
+    hr{
+        position: absolute;
+        width: 80%;
+        height: 0px;
+        left: 100px;
+        top: 248px;
+        border: 1px solid #393E54;
+    }
+
+  
+}
+.contacts h3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+color: #393E54;
+}
+h3{
+    position: absolute;
+width: 134px;
+height: 36px;
+left: 100px;
+top: 2260px;
+
+}
+.logo img{
+    position: absolute;
+width: 203px;
+height: 61px;
+left: 45%;
+top: 2298px;
+background: url(Logo@2x);
+}
+
+.socialmedia {
+    h3{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+       
+        
+        text-align: center;
+        
+        color: #393E54;
+    }
+    a {
+        display: flex;
+    }
+    img{
+        position: absolute;
+        top: 2400px;
+        right: 10%;
+      width: 50px;
+      height: 50px;
+    }
+}
+*/
